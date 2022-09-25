@@ -55,7 +55,8 @@ def deal_person(cookies, send_key):
     # 3. 输入账号密码并登录，然后找到“index”的“requests headers”一栏
     # 4. 将cookie中的所有内容全部复制粘贴到cookies = ‘’中，用以完成请求头。
     headers = {
-        "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36'}
+        "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'}
+#         "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36'}
     cookies_dict = {i.split("=")[0]: i.split("=")[-1] for i in cookies.split("; ")}
 
     # 获取session requests
