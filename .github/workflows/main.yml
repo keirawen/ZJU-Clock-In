@@ -20,9 +20,7 @@ jobs:
         run: |
           sudo -E apt-get -yqq update
           sudo -E apt-get -yqq install python3
-#       - name: DDDDOCR   
-#         run: |
-#           sudo -E pip install ddddocr -i https://pypi.org/simple
+          sudo -E pip install ddddocr -i https://pypi.org/simple
  
       - name: Clock In
         env:
